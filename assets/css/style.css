@@ -1,0 +1,335 @@
+body {
+    font-family: "Inter", sans-serif;
+    background: rgb(11, 27, 54);
+    ;
+    scroll-behavior: smooth;
+    font-weight: normal;
+}
+
+.image-wrapper {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+/* Colors and Background */
+.text-skyblue {
+    color: #25CBD2;
+}
+
+
+/* font sizs and weights */
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.fs-26 {
+    font-size: 26px;
+}
+
+.fs-37 {
+    font-size: 37px;
+}
+
+.fs-40 {
+    font-size: 40px;
+}
+
+.fs-53 {
+    font-size: 53px;
+}
+
+.fs-96 {
+    font-size: 96px;
+}
+
+/* padding and margins */
+.pt-30 {
+    padding-top: 200px;
+    padding-bottom: 300px;
+}
+
+.py-11 {
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+.pt-20 {
+    padding-top: 200px;
+    padding-bottom: 150px;
+}
+
+.mt-8 {
+    margin-top: 80px;
+}
+
+.mt-10 {
+    margin-top: 100px;
+}
+
+/* borders */
+.border-primary {
+    border-color: #25CBD2 !important;
+}
+
+/* headings and paragraphs */
+h1 {
+    font-size: 64px;
+    margin: 0;
+}
+
+p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* buttons */
+.btn {
+    padding: 8px 40px;
+}
+
+.btn-primary {
+    background-color: rgb(11, 27, 54) !important;
+    border-color: #25CBD2;
+}
+
+/* hero-section */
+.hero-section {
+    z-index: 1;
+    overflow: hidden;
+    background: url(/assets/images/main-circle.png) top left no-repeat;
+    background-size: 50%;
+
+}
+
+.img-animation {
+    animation: 2s ease-in-out 0s infinite alternate-reverse both running up-down;
+    animation-timeline: auto;
+    animation-range-start: normal;
+    animation-range-end: normal;
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+        /* Adjust the value as needed */
+    }
+}
+
+.hero-section .bg-image {
+    z-index: -1;
+    opacity: .5;
+}
+
+
+/* AI SECTION */
+
+.AI-section .card {
+    width: fit-content;
+}
+
+.box {
+    border: 2px solid #25CBD2;
+    cursor: pointer;
+}
+
+
+/*Intelligence section */
+.intelligence-section {
+    z-index: 1;
+}
+
+.intelligence-section::before {
+    content: "";
+    background: url(/assets/images/main-circle.png) top left no-repeat;
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: 50%;
+}
+
+.intelligence-section h2::before {
+    content: "";
+    height: 2px;
+    flex: 1;
+    max-width: 50%;
+    background-color: #25CBD2;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+/* inteligence section */
+.inteligence-section ul::before {
+    content: "";
+    height: 2px;
+    flex: 1;
+    max-width: 50%;
+    background-color: #25CBD2;
+
+}
+
+/* scope section */
+.scope-section {
+    z-index: 2;
+}
+
+.scope-section::before {
+    content: "";
+    background: url(/assets/images/main-circle.png) top right no-repeat;
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: 50%;
+    background-position: 138% center;
+}
+
+/* machine-section */
+.machine-section {
+    z-index: 1;
+}
+
+.machine-section::before {
+    content: "";
+    background: url(/assets/images/main-circle.png) top left no-repeat;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: 50%;
+}
+
+.machine-section h2::before {
+    content: "";
+    height: 2px;
+    flex: 1;
+    max-width: 50%;
+    background-color: #25CBD2;
+}
+
+/* feature section */
+
+.feature-section .btn {
+    padding: 8px 17px;
+}
+
+/* supervised section */
+.supervised-section {
+    z-index: 1;
+}
+
+.supervised-section::before {
+    content: "";
+    background: url(/assets/images/main-circle.png) top right no-repeat;
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: 50%;
+    background-position: 138% center;
+}
+
+/* Unsupervised section */
+.Unsupervised-section {
+    z-index: 1;
+}
+
+.Unsupervised-section::before {
+    content: "";
+    background: url(/assets/images/main-circle.png) top right no-repeat;
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: 50%;
+    background-position: 138% center;
+}
+
+/* reinforcementlearning-section */
+.reinforcementlearning-section {
+    z-index: 1;
+}
+
+.reinforcementlearning-section::before {
+    content: "";
+    background: url(/assets/images/cricle-right.png) top right no-repeat;
+    opacity: 0.2;
+    position: absolute;
+    top: 150px;
+    right: 150px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: 50%;
+    background-position: 138% center;
+}
+
+/* deeplearning-section */
+.deeplearn-section {
+    z-index: 1;
+}
+
+.deeplearn-section::before {
+    content: "";
+    background: url(/assets/images/cricle-right.png) top right no-repeat;
+    opacity: 0.2;
+    position: absolute;
+    top: 150px;
+    right: 150px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Refrences section */
+.references-section h2::after {
+    content: "";
+    height: 3px;
+    flex: 1;
+    max-width: 100%;
+    background-color: #25CBD2;
+}
+
+/* thank section */
+.thank-section {
+    background: url(/assets/images/center-cricle.png);
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+@media screen and (max-width:575.98px) {
+    .mt-10 {
+        margin-top: 70px;
+    }
+
+    .fs-53 {
+        font-size: 50px;
+    }
+}
