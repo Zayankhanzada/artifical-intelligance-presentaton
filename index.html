@@ -29,10 +29,10 @@
 
 <body>
     <!-- Hero-section -->
-    <section class="hero-section">
+    <section class="hero-section right-circle" id="hero-section">
         <div class="container py-11">
             <div class="row flex-lg-row flex-column justify-content-center align-items-center row-gap-5 ">
-                <div class="col-12 col-lg-8 text-center ">
+                <div class="col-12 col-lg-8 text-lg-start text-center">
                     <img src="/assets/images/hero-image.png" class="w-80 img-animation" alt="">
                 </div>
                 <div class="col-12 col-lg-4">
@@ -42,16 +42,16 @@
                         <h1 class="text-white text-lg-start text-center mt-4" data-aos="zoom-out">Artificial
                             Intelligence</h1>
                         <div class=" d-flex justify-content-lg-start justify-content-center align-items-center">
-                            <a href="#ai-section" class="btn btn-primary  border-3 rounded-5 mt-4"
-                                data-aos="zoom-in">LET'S
-                                START</a>
+                            <button onclick="navigateToSection('ai-section')"
+                                class="btn btn-primary fw-semibold  border-3 rounded-5 mt-4" data-aos="zoom-in">LET'S
+                                START</button>
                         </div>
                     </div>
                 </div>
             </div>
     </section>
     <!--  AI section -->
-    <section class="AI-section" id="ai-section">
+    <section class="AI-section d-none center-cricle position-relative" id="ai-section">
         <div class="container pt-20 ">
             <div class="card bg-transparent rounded-1 border-3 border-primary p-2">
                 <p class="d-inline-flex gap-2 align-items-center">
@@ -71,20 +71,45 @@
                                 learning, and deep learning. </p>
                         </div>
                         <div class="mt-lg-5 mt-0" data-aos="zoom-in">
-                            <a href="#references1" class="btn btn-primary rounded-5">References</a>
+                            <button onclick="navigateToSection('references1')"
+                                class="btn btn-primary rounded-5">References</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 ">
-                    <div class="image-wrapper" data-aos="zoom-in">
-                        <img src="/assets/images/artificial-intelligence.png" class="img-fluid img-animation" alt="">
+                    <div class="image-wrapper img-animation" data-aos="zoom-in">
+                        <button onclick="navigateToSection('intelligence-section')" class=""><img
+                                src="/assets/images/dark-blue.png" class="img-fluid opacity-04 position-relative "
+                                alt=""> <span class="fs-18 text-white position-absolute top-7 end-47"> Artificial
+                                Intelligence</span></button>
+                        <button onclick="navigateToSection('machine-section')" class=""> <img
+                                src="/assets/images/light-blue.png" alt="" class="position-absolute end-30 top-15"><span
+                                class="text-dark fs-18 position-absolute top-23 end-47 ">Machine
+                                Learning</span></button>
+                        <button onclick="navigateToSection('deeplearn-section')" class=""><img src="/assets/images/blue-border-white.png"
+                                class="position-absolute top-33 end-44" alt=""> <span
+                                class="fs-18 text-white position-absolute z-1 top-47 end-49  ">Deep learning</span>
+                            </button>
+                            <button onclick="navigateToSection('supervised-section')" class=""><img src="/assets/images/branches-bg.png"
+                                    class="position-absolute top-36 end-75" alt=""><span
+                                    class="text-dark fs-16 fw-normal position-absolute z-1 top-44 end-79 text-center">Supervised
+                                    <br> Learning </span></button>
+                            <button onclick="navigateToSection('Unsupervised-section')" class=""> <img src="/assets/images/branches-bg.png"
+                                    class="position-absolute top-36 end-21" alt=""><span
+                                    class="fs-16 text-dark position-absolute top-44 end-23 text-center">Unsupervised
+                                    <br>Learning</span></button>
+                            <button onclick="navigateToSection('reinforcementlearn-section')" class=""> <img src="/assets/images/branches-bg.png"
+                                    class="position-absolute top-72 end-48" alt=""><span
+                                    class="text-dark fw-normal fs-16 position-absolute top-81 end-49 text-center">Reinforcement
+                                    <br>Learning</span>
+                            </button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- Intelligance-section -->
-    <section class="intelligence-section position-relative ">
+    <section class="intelligence-section d-none right-circle position-relative" id="intelligence-section">
         <div class="container  py-5 ">
             <div class="d-flex justify-content-end align-items-end">
                 <div class="box p-2">
@@ -119,7 +144,7 @@
                             </p>
                         </div>
                         <div class="mt-lg-5 mt-0" data-aos="zoom-in">
-                            <a href="#inteligence-section" class="btn btn-primary rounded-5">Read More!</a>
+                            <button onclick="navigateToSection('inteligence-section')" class="btn btn-primary rounded-5">Read More!</button>
                         </div>
                     </div>
                 </div>
@@ -127,7 +152,7 @@
         </div>
     </section>
     <!-- inteligence-section -->
-    <section class="inteligence-section" id="inteligence-section">
+    <section class="inteligence-section d-none right-circle position-relative" id="inteligence-section">
         <div class="container py-11">
             <div class="d-flex justify-content-end align-items-end">
                 <div class="box p-2" data-aos="zoom-in">
@@ -162,7 +187,7 @@
                             </ul>
                         </div>
                         <div class="mt-lg-5 mt-0" data-aos="zoom-out">
-                            <a href="#scope-section" class="btn btn-primary rounded-5">Importance &amp; Scope of AI</a>
+                            <button onclick="navigateToSection('scope-section')" class="btn btn-primary rounded-5">Importance &amp; Scope of AI</button>
                         </div>
                     </div>
                 </div>
@@ -170,7 +195,7 @@
         </div>
     </section>
     <!-- scope-section -->
-    <section class="scope-section position-relative" id="scope-section">
+    <section class="scope-section  d-none left-circle position-relative" id="scope-section">
         <div class="container py-11">
             <div class="d-flex justify-content-end align-items-end">
                 <div class="box p-2" data-aos="zoom-in">
@@ -191,7 +216,7 @@
                         enhances performance, and efficiency and encourages innovation across industries.
                     </p>
                     <div class="mt-5" data-aos="zoom-in">
-                        <a href="#morescope-section" class="btn btn-primary rounded-5">Read More!</a>
+                        <button onclick="navigateToSection('morescope-section')" class="btn btn-primary rounded-5">Read More!</button>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6" data-aos="fade-down">
@@ -203,7 +228,7 @@
         </div>
     </section>
     <!--  more-scope-section -->
-    <section class="morescope-section" id="morescope-section">
+    <section class="morescope-section d-none " id="morescope-section">
         <div class="container pt-30">
             <div class="d-flex justify-content-end align-items-end">
                 <div class="box p-2" data-aos="zoom-in">
@@ -243,8 +268,8 @@
         </div>
     </section>
     <!-- machine learning section -->
-    <section class="machine-section position-relative">
-        <div class="container  py-5 ">
+    <section class="machine-section  d-none right-circle position-relative" id="machine-section">
+        <div class="container py-5 ">
             <div class="d-flex justify-content-end align-items-end">
                 <div class="box p-2">
                     <div class="image-wrapper">
@@ -274,10 +299,10 @@
                                 utilising historical data, they are able to address new challenges (Celik, 2018).</p>
                         </div>
                         <div class="mt-lg-5 mt-3 text-lg-start text-center">
-                            <a href="#feature-section"
+                            <button onclick="navigateToSection('feature-section')"
                                 class="btn btn-primary border-5 fw-semibold rounded-circle p-5 fs-26  lh-0"
                                 data-aos="zoom-out">key<br>
-                                Features</a>
+                                Features</button>
                         </div>
                     </div>
                 </div>
@@ -285,7 +310,7 @@
         </div>
     </section>
     <!-- feature section -->
-    <section class="feature-section" id="feature-section">
+    <section class="feature-section d-none" id="feature-section">
         <div class="container pt-20">
             <div class="d-flex justify-content-end align-items-end">
                 <div class="box p-2">
@@ -304,13 +329,13 @@
                     <div
                         class="d-flex flex-nonwrap flex-row column-gap-lg-2 column-gap-1 align-items-center card bg-transparent">
                         <div class="text-start me-3">
-                            <h4 class="fs-20 text-end text-skyblue">Learning from Data</h4>
+                            <h4 class="fs-20 text-start text-skyblue">Learning from Data</h4>
                             <p class="mt-lg-3 mt-2 text-white text-wrap  me-0">Data
                                 ML systems analyse historical data in order to identify patterns and make decisions.</p>
                         </div>
                         <div class="text-end  ">
-                            <a href="#inteligence-section"
-                                class="btn btn-primary rounded-circle p-4 fs-40  lh-none">01</a>
+                            <button onclick="navigateToSection('inteligence-section')"
+                                class="btn btn-primary rounded-circle p-4 fs-40  lh-none">01</button>
                         </div>
                     </div>
                 </div>
@@ -336,7 +361,7 @@
                     <div
                         class="d-flex flex-nonwrap flex-row column-gap-lg-2 column-gap-1 align-items-center card bg-transparent">
                         <div class="text-start me-3">
-                            <h4 class="fs-20 text-end text-skyblue">Problem-Solving</h4>
+                            <h4 class="fs-20 text-start text-skyblue">Problem-Solving</h4>
                             <p class="mt-lg-3 mt-2 text-white text-wrap me-0 ">ML is capable of solving complex problems
                                 that are
                                 difficult to address with traditional programming, such as recognising speech or images
@@ -369,7 +394,7 @@
                     <div
                         class="d-flex flex-nonwrap flex-row column-gap-lg-2 column-gap-1 align-items-center card bg-transparent">
                         <div class="text-start me-3">
-                            <h4 class="fs-20 text-end text-skyblue">Predictive Analysis</h4>
+                            <h4 class="fs-20 text-start text-skyblue">Predictive Analysis</h4>
                             <p class="mt-lg-3  mt-2 text-white text-wrap me-0 ">
                                 ML is used by businesses to forecast trends, manage risks, and improve efficiency.</p>
                         </div>
@@ -419,7 +444,7 @@
         </div>
     </section>
     <!-- Supervised learning -->
-    <section class="supervised-section position-relative" id="supervised-section">
+    <section class="supervised-section d-none left-circle position-relative" id="supervised-section">
         <div class="container py-11">
             <div class="d-flex justify-content-end align-items-end">
                 <div class="box p-2" data-aos="zoom-in">
@@ -444,7 +469,7 @@
                         pairs, and then validating its performance on a test set, which evaluates the machine's ability
                         to generalize to new, unseen data. </p>
                     <div class="mt-5 " data-aos="zoom-in">
-                        <a href="#stucture-section" class="btn btn-primary rounded-5">Read More!</a>
+                        <button onclick="navigateToSection('stucture-section')" class="btn btn-primary rounded-5">Read More!</button>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4" data-aos="fade-down">
@@ -456,7 +481,7 @@
         </div>
     </section>
     <!-- read more of supervised section -->
-    <section class="stucture-section" id="stucture-section">
+    <section class="stucture-section d-none" id="stucture-section">
         <div class="container pt-30">
             <div class="d-flex justify-content-end align-items-end">
                 <div class="box p-2" data-aos="zoom-in">
@@ -484,7 +509,7 @@
         </div>
     </section>
     <!-- Unsupervised learning -->
-    <section class="Unsupervised-section position-relative" id="Unsupervised-section">
+    <section class="Unsupervised-section d-none left-circle position-relative" id="Unsupervised-section">
         <div class="container py-11">
             <div class="d-flex justify-content-end align-items-end">
                 <div class="box p-2" data-aos="zoom-in">
@@ -520,7 +545,7 @@
         </div>
     </section>
     <!-- Reinforcement Learning -->
-    <section class="reinforcementlearning-section position-relative" id="reinforcementlearn-section">
+    <section class="reinforcementlearning-section d-none left-circle position-relative" id="reinforcementlearn-section">
         <div class="container py-11">
             <div class="d-flex justify-content-end align-items-end">
                 <div class="box p-2" data-aos="zoom-in">
@@ -547,7 +572,7 @@
                         (Francois-Lavet et al., 2018).
                     </p>
                     <div class="mt-5" data-aos="zoom-out">
-                        <a href="#reinforcement-section" class="btn btn-primary rounded-5">Read More!</a>
+                        <button onclick="navigateToSection('reinforcement-section')" class="btn btn-primary rounded-5">Read More!</button>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4">
@@ -559,7 +584,7 @@
         </div>
     </section>
     <!-- read more of reinforcement section -->
-    <section class="reinforcement-section" id="reinforcement-section">
+    <section class="reinforcement-section d-none" id="reinforcement-section">
         <div class="container pt-30">
             <div class="d-flex justify-content-end align-items-end">
                 <div class="box p-2" data-aos="zoom-in">
@@ -587,7 +612,7 @@
         </div>
     </section>
     <!-- deep Learning -->
-    <section class="deeplearn-section position-relative" id="deeplearn-section">
+    <section class="deeplearn-section d-none left-cricle position-relative" id="deeplearn-section">
         <div class="container py-11">
             <div class="d-flex justify-content-end align-items-end">
                 <div class="box p-2" data-aos="zoom-in">
@@ -614,7 +639,7 @@
                         iterative training processes (Ghiassi &amp; Saidane, 2005).
                     </p>
                     <div class="mt-5">
-                        <a href="#moredeep-section" class="btn btn-primary rounded-5" data-aos="zoom-out">Read More!</a>
+                        <button onclick="navigateToSection('moredeep-section')" class="btn btn-primary rounded-5" data-aos="zoom-out">Read More!</button>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4" data-aos="fade-down">
@@ -626,7 +651,7 @@
         </div>
     </section>
     <!-- read more of deep learn section -->
-    <section class="moredeep-section" id="moredeep-section">
+    <section class="moredeep-section d-none" id="moredeep-section">
         <div class="container pt-20">
             <div class="d-flex justify-content-end align-items-end">
                 <div class="box p-2" data-aos="zoom-in">
@@ -676,12 +701,12 @@
         </div>
     </section>
     <!-- refrences section -->
-    <section class="references-section" id="references1">
+    <section class="references-section d-none" id="references1">
         <div class="container py-11">
             <div class="d-flex justify-content-between align-items-center">
                 <div class="">
-                    <a href="#references2" class="btn btn-primary  rounded-5 text-white" data-aos="zoom-in">Next
-                        Page</a>
+                    <button onclick="navigateToSection('references2')" class="btn btn-primary  rounded-5 text-white" data-aos="zoom-in">Next
+                        Page</button>
                 </div>
 
                 <div class="box p-2" data-aos="zoom-in">
@@ -725,11 +750,11 @@
             </div>
         </div>
     </section>
-    <section class="references-section" id="references2">
+    <section class="references-section d-none" id="references2">
         <div class="container py-11">
             <div class="d-flex justify-content-between align-items-center">
                 <div class="">
-                    <a href="#references3" data-aos="zoom-in" class="btn btn-primary rounded-5 text-white">Next Page</a>
+                    <button onclick="navigateToSection('references3')" data-aos="zoom-in" class="btn btn-primary rounded-5 text-white">Next Page</button>
                 </div>
 
                 <div class="box p-2" data-aos="zoom-in">
@@ -771,12 +796,12 @@
             </div>
         </div>
     </section>
-    <section class="references-section" id="references3">
+    <section class="references-section d-none" id="references3">
         <div class="container py-11">
             <div class="d-flex justify-content-between align-items-center">
                 <div class="">
-                    <a href="#thank-section" class="btn btn-primary  rounded-5 text-white" data-aos="zoom-in">Next
-                        Page</a>
+                    <button onclick="navigateToSection('thank-section')" class="btn btn-primary  rounded-5 text-white" data-aos="zoom-in">Next
+                        Page</button>
                 </div>
 
                 <div class="box p-2" data-aos="zoom-in">
@@ -823,7 +848,7 @@
             </div>
         </div>
     </section>
-    <section class="thank-section" id="thank-section">
+    <section class="thank-section center-cricle d-none" id="thank-section">
         <div class="container py-11">
             <div class="d-flex justify-content-end align-items-end">
 
@@ -854,6 +879,24 @@
         AOS.init({
             duration: 1500,
         });
+    </script>
+    <script>
+        function navigateToSection(sectionId) {
+            // Get all sections
+            const sections = document.querySelectorAll('section');
+
+            // Iterate over sections to toggle classes
+            sections.forEach(section => {
+                if (section.id === sectionId) {
+                    section.classList.remove('d-none');
+                    section.classList.add('d-block');
+                } else {
+                    section.classList.remove('d-block');
+                    section.classList.add('d-none');
+                }
+            });
+        }
+
     </script>
 </body>
 

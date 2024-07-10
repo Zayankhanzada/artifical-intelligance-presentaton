@@ -1,9 +1,9 @@
 body {
     font-family: "Inter", sans-serif;
     background: rgb(11, 27, 54);
-    overflow-x: hidden;
-    scroll-behavior: smooth;
+    overflow: hidden;
     font-weight: normal;
+
 }
 
 .image-wrapper {
@@ -18,6 +18,14 @@ body {
     color: #25CBD2;
 }
 
+button {
+    background: transparent;
+    border: none;
+}
+
+section {
+    height: 100vh;
+}
 
 /* font sizs and weights */
 .fs-16 {
@@ -106,12 +114,33 @@ p {
     border-color: #25CBD2;
 }
 
+.right-circle::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(/assets/images/main-circle.png) no-repeat center center;
+    background-size: contain;
+    animation: rotate 10s linear infinite;
+    right: 30%;
+    top: 0;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
 /* hero-section */
 .hero-section {
     z-index: 1;
     overflow: hidden;
-    background: url(/assets/images/main-circle.png) top left no-repeat;
-    background-size: 50%;
 
 }
 
@@ -145,25 +174,114 @@ p {
     width: fit-content;
 }
 
+.opacity-04 {
+    opacity: 0.4;
+}
+
+.opacity-04:hover {
+    opacity: 1;
+}
+
+img [src*="light-blue.png"] {
+    width: 100%;
+}
+
 .box {
     border: 2px solid #25CBD2;
     cursor: pointer;
 }
 
+/* position absolute values */
+.end-30 {
+    right: 30%;
+}
+
+.top-15 {
+    top: 15%;
+}
+
+.top-36 {
+    top: 36%;
+}
+
+.end-75 {
+    right: 75%;
+}
+
+.end-21 {
+    right: 21%;
+}
+
+.top-33 {
+    top: 33%;
+}
+
+.top-23 {
+    top: 23%;
+}
+
+.end-23 {
+    right: 23%;
+}
+
+.top-44 {
+    top: 44%;
+}
+
+.top-47 {
+    top: 47%;
+}
+
+.top-72 {
+    top: 72%;
+}
+
+.top-7 {
+    top: 7%;
+}
+
+.end-44 {
+    right: 44%;
+}
+
+.end-49 {
+    right: 49%;
+}
+
+.top-46 {
+    top: 46%;
+}
+
+.end-47 {
+    right: 47%;
+}
+
+.end-79 {
+    right: 79%;
+}
+
+.top-81 {
+    top: 81%;
+}
+
+.end-48 {
+    right: 48%;
+}
 
 /*Intelligence section */
 .intelligence-section {
     z-index: 1;
 }
 
-.intelligence-section::before {
+.left-circle::before {
     content: "";
-    background: url(/assets/images/main-circle.png) top left no-repeat;
-    opacity: 1;
     position: absolute;
     width: 100%;
     height: 100%;
-    background-size: 50%;
+    background: url(/assets/images/main-circle.png) no-repeat center center;
+    background-size: contain;
+    animation: rotate 10s linear infinite;
+    right: -30%;
 }
 
 .intelligence-section h2::before {
@@ -193,35 +311,12 @@ p {
     z-index: 2;
 }
 
-.scope-section::before {
-    content: "";
-    background: url(/assets/images/main-circle.png) top right no-repeat;
-    opacity: 1;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-size: 50%;
-    background-position: 138% center;
-}
 
 /* machine-section */
 .machine-section {
     z-index: 1;
 }
 
-.machine-section::before {
-    content: "";
-    background: url(/assets/images/main-circle.png) top left no-repeat;
-    opacity: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-size: 50%;
-}
 
 .machine-section h2::before {
     content: "";
@@ -242,70 +337,27 @@ p {
     z-index: 1;
 }
 
-.supervised-section::before {
-    content: "";
-    background: url(/assets/images/main-circle.png) top right no-repeat;
-    opacity: 1;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-size: 50%;
-    background-position: 138% center;
-}
+
 
 /* Unsupervised section */
 .Unsupervised-section {
     z-index: 1;
 }
 
-.Unsupervised-section::before {
-    content: "";
-    background: url(/assets/images/main-circle.png) top right no-repeat;
-    opacity: 1;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-size: 50%;
-    background-position: 138% center;
-}
+
 
 /* reinforcementlearning-section */
 .reinforcementlearning-section {
     z-index: 1;
 }
 
-.reinforcementlearning-section::before {
-    content: "";
-    background: url(/assets/images/cricle-right.png) top right no-repeat;
-    opacity: 0.2;
-    position: absolute;
-    top: 150px;
-    right: 150px;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-size: 50%;
-    background-position: 138% center;
-}
+
 
 /* deeplearning-section */
 .deeplearn-section {
     z-index: 1;
 }
 
-.deeplearn-section::before {
-    content: "";
-    background: url(/assets/images/cricle-right.png) top right no-repeat;
-    opacity: 0.2;
-    position: absolute;
-    top: 150px;
-    right: 150px;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
 
 /* Refrences section */
 .references-section h2::after {
@@ -317,12 +369,17 @@ p {
 }
 
 /* thank section */
-.thank-section {
-    background: url(/assets/images/center-cricle.png);
-    background-position: center;
-    background-repeat: no-repeat;
-
+.center-cricle::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(/assets/images/main-circle.png) no-repeat center center;
+    background-size: contain;
+    animation: rotate 10s linear infinite;
+    left: 0%;
 }
+
 
 @media screen and (max-width:575.98px) {
     .mt-10 {
@@ -331,5 +388,78 @@ p {
 
     .fs-53 {
         font-size: 50px;
+    }
+
+    .fs-18 {
+        font-size: 16px;
+
+    }
+
+    .fs-16 {
+        font-size: 14px;
+    }
+
+    .opacity-04 {
+        opacity: 1;
+    }
+
+    .end-47 {
+        right: 31%;
+    }
+
+    .top-7 {
+        top: 5%;
+    }
+
+    .top-15 {
+        top: 12%;
+    }
+
+    .end-30 {
+        right: 11%;
+    }
+
+    .top-23 {
+        top: 19%;
+    }
+
+    .end-21 {
+        right: 0;
+    }
+
+    .end-23 {
+        right: 2%;
+    }
+
+    .end-44 {
+        right: 28%;
+    }
+
+    .top-33 {
+        top: 27%
+    }
+
+    .end-49 {
+        right: 39%;
+    }
+
+    .top-47 {
+        top: 46%;
+    }
+
+    .top-72 {
+        top: 73%;
+    }
+
+    .end-48 {
+        right: 37%;
+    }
+
+    img[src*="light-blue.png"] {
+        width: 80%;
+    }
+
+    img[src*="branches-bg.png"] {
+        width: 27%
     }
 }
