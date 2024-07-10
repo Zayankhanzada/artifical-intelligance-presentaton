@@ -1,7 +1,7 @@
 body {
     font-family: "Inter", sans-serif;
     background: rgb(11, 27, 54);
-    overflow-x: hidden;
+    overflow: hidden;
     font-weight: normal;
 
 }
@@ -379,7 +379,10 @@ img [src*="light-blue.png"] {
 
 
 @media screen and (max-width:575.98px) {
-  h1{
+  body{
+    overflow-y: scroll;
+  }
+    h1{
     font-size: 50px;
   }
   .fs-37{
