@@ -1,7 +1,7 @@
 body {
     font-family: "Inter", sans-serif;
     background: rgb(11, 27, 54);
-    overflow: hidden;
+    overflow-x: hidden;
     font-weight: normal;
 
 }
@@ -379,6 +379,12 @@ img [src*="light-blue.png"] {
 
 
 @media screen and (max-width:575.98px) {
+  h1{
+    font-size: 50px;
+  }
+  .fs-37{
+    font-size: 30px;
+  }
     .mt-10 {
         margin-top: 70px;
     }
