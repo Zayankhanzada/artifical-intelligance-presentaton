@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!--font faimly-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <!--Font-awesome css-->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!--Font-awesome css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Swiper CSS-->
@@ -29,7 +29,7 @@
 
 <body>
     <!-- Hero-section -->
-    <section class="hero-section right-circle" id="hero-section">
+    <section class="hero-section section-visible right-circle" id="hero-section">
         <div class="container py-11">
             <div class="row flex-lg-row flex-column justify-content-center align-items-center row-gap-5 ">
                 <div class="col-12 col-lg-8 text-lg-start text-center">
@@ -52,7 +52,14 @@
     </section>
     <!--  AI section -->
     <section class="AI-section d-none center-cricle position-relative" id="ai-section">
-        <div class="container py-11 ">
+        <div class="container py-5">
+            <div class="d-flex justify-content-end align-items-end">
+                <div class="box p-2" data-aos="zoom-in">
+                    <div class="image-wrapper">
+                        <button onclick="navigateToSection('hero-section')" class=""> <img src="/assets/images/home-icon.png" alt="" class=""></button>
+                    </div>
+                </div>
+            </div>
             <div class="card bg-transparent rounded-1 border-3 border-primary p-2">
                 <p class="d-inline-flex gap-2 align-items-center">
                     <img src="/assets/images/robot.png" class="img-fluid" alt="">
@@ -64,7 +71,7 @@
                 <div class="col-12 col-lg-5 me-4 ">
                     <div class="d-flex flex-column justify-content-between  row-gap-5">
                         <div class="" data-aos="fade-up">
-                            <p class="text-skyblue fs-24">Artificial Intelligence (AI) encompasses a range of
+                            <p class="text-skyblue fs-20">Artificial Intelligence (AI) encompasses a range of
                                 technologies that enable machines to perform tasks requiring human intelligence, such as
                                 learning, reasoning, and adapting. This infographic unravels the core concepts of AI,
                                 including machine learning, supervised and unsupervised learning, reinforcement
@@ -110,7 +117,7 @@
     </section>
     <!-- Intelligance-section -->
     <section class="intelligence-section d-none right-circle position-relative" id="intelligence-section">
-        <div class="container  py-5 ">
+        <div class="container py-5 ">
             <div class="d-flex justify-content-end align-items-end">
                 <div class="box p-2">
                     <div class="image-wrapper">
@@ -118,10 +125,10 @@
                     </div>
                 </div>
             </div>
-            <div class="row p-0 pt-5">
+            <div class="row p-0 pt-2">
                 <div class="col-12 p-0" data-aos="fade-right">
                     <h2 class="text-skyblue d-flex gap-4 align-items-center"><span
-                            class=" fs-53 fw-semibold text-center">Artificial Intelligence</span> </h2>
+                            class=" fs-45 fw-semibold text-center">Artificial Intelligence</span> </h2>
                 </div>
             </div>
             <div class="row flex-lg-row flex-column row-gap-5 py-5">
@@ -161,7 +168,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row flex-lg-row flex-column align-items-center row-gap-5 py-5">
+            <div class="row flex-lg-row flex-column align-items-center row-gap-5 py-2">
                 <div class="col-12 col-lg-6" data-aos="fade-up">
                     <div class="d-flex justify-content-center image-wrapper ">
                         <img src="/assets/images/AI.svg" class="w-80 img-animation" alt="">
@@ -171,22 +178,22 @@
                     <div class="d-flex flex-column gap-lg-0 gap-4 justify-content-between">
                         <div class="" data-aos="zoom-out">
                             <ul class="d-flex flex-column">
-                                <li class=" pt-4 fs-20 text-white">While there is no single accepted definition of AI,
+                                <li class=" pt-4 fs-16 text-white">While there is no single accepted definition of AI,
                                     there are certain common features that are evident across the various descriptions
                                     of AI.</p>
-                                <li class="pt-4 fs-20 text-white">Information processing is a fundamental aspect of AI.
+                                <li class="pt-4 fs-16 text-white">Information processing is a fundamental aspect of AI.
                                     AI systems are capable of processing large amounts of information.</p>
-                                <li class="pt-4 fs-20 text-white"> Environmental perception is a key feature of AI
+                                <li class="pt-4 fs-16 text-white"> Environmental perception is a key feature of AI
                                     systems. AI is able to perceive and interpret data from its environment.</p>
-                                <li class="pt-4 fs-20 text-white">Goal Achievement: AI systems are designed to achieve
+                                <li class="pt-4 fs-16 text-white">Goal Achievement: AI systems are designed to achieve
                                     specific business objectives.</p>
-                                <li class="pt-4 fs-20 text-white">The final stage of the process is decision-making. AI
+                                <li class="pt-4 fs-16 text-white">The final stage of the process is decision-making. AI
                                     systems make decisions based on data analysis, as outlined by Samoili et al. (2020).
                                     </p>
 
                             </ul>
                         </div>
-                        <div class="mt-lg-5 mt-0" data-aos="zoom-out">
+                        <div class="mt-lg-2 mt-0" data-aos="zoom-out">
                             <button onclick="navigateToSection('scope-section')" class="btn btn-primary rounded-5">Importance &amp; Scope of AI</button>
                         </div>
                     </div>
@@ -204,9 +211,9 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-10 row-gap-3">
+            <div class="row mt-4 row-gap-3">
                 <div class="col-12 col-lg-6">
-                    <h2 class="fs-53 text-skyblue fw-semibold pe-lg-5 pe-0 me-4 " data-aos="fade-down">Importance and
+                    <h2 class="fs-45 text-skyblue fw-semibold pe-lg-5 pe-0 me-4 " data-aos="fade-down">Importance and
                         Scope of AI</h2>
                     <p class="pt-4 fs-20 text-white" data-aos="zoom-out">
                         AI has been hailed as a technology of the future and a pinnacle of human technological
@@ -229,7 +236,7 @@
     </section>
     <!--  more-scope-section -->
     <section class="morescope-section d-none " id="morescope-section">
-        <div class="container py-11">
+        <div class="container py-5">
             <div class="d-flex justify-content-end align-items-end">
                 <div class="box p-2" data-aos="zoom-in">
                     <div class="image-wrapper">
@@ -237,30 +244,34 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-10">
-                <div class="col-12" data-aos="zoom-out">
-                    <div class="">
-                        <ul class="">
-                            <li class=" fs-20 text-white text-normal" text-normal">Here are some of the applications of
-                                AI in various industries.</li>
-                            <li class=" fs-20 text-white text-normal">Finance and Banking: Enhancing security, reducing
-                                costs, and improving customer support through chatbots (Mhlanga, 2020).</li>
-                            <li class=" fs-20 text-white text-normal">E-commerce: Predicting demand, adapting to market
-                                changes, and personalizing marketing strategies, as seen with Amazon (Liang &amp; Tao,
-                                2020).</li>
-                            <li class=" fs-20 text-white text-normal">Robotics: Increasing autonomy, productivity, and
-                                safety in industrial automation (Najmaei &amp; Kermani, 2010).</li>
-                            <li class=" fs-20 text-white text-normal">Social Media: Shaping content and influencing user
-                                behaviour (Balaji et al., 2021).</li>
-                            <li class=" fs-20 text-white text-normal">Space Exploration: Analyzing data and enabling
-                                autonomous space missions (Chien &amp; Morris, 2014).</li>
-                            <li class=" fs-20 text-white text-normal">Automobiles: Enabling autonomous driving, as
-                                demonstrated by Tesla (Tong et al., 2019).</li>
-                            <li class=" fs-20 text-white text-normal">Surveillance: Enhancing security systems for
-                                object detection and anomaly recognition (Sikora et al., 2020).</li>
-                            <li class=" fs-20 text-white text-normal">Education: Facilitating personalized learning and
-                                automating tasks (Chen et al., 2020).</li>
+            <div class="row align-items-center justify-content-between mt-5">
+                <div class="col-12 col-lg-6 col-xl-5 aos-init aos-animate" data-aos="fade-right">
+                    <div>
+                        <p class="text-white">Here are some of the applications of AI in various industries.</p>
 
+                        <ul class="d-flex flex-column gap-3 mt-4 text-white">
+                            <li>Finance and Banking: Enhancing security, reducing costs, and improving customer support
+                                through chatbots (Mhlanga, 2020).</li>
+                            <li>E-commerce: Predicting demand, adapting to market changes, and personalizing marketing
+                                strategies, as seen with Amazon (Liang &amp; Tao, 2020).</li>
+                            <li>Robotics: Increasing autonomy, productivity, and safety in industrial automation
+                                (Najmaei &amp; Kermani, 2010).</li>
+                            <li>Social Media: Shaping content and influencing user behaviour (Balaji et al., 2021).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 col-xl-5 aos-init aos-animate" data-aos="fade-left">
+                    <div>
+                        <ul class="d-flex flex-column gap-3 mt-0 mt-lg-4 text-white">
+                            <li>Space Exploration: Analyzing data and enabling autonomous space missions (Chien &amp;
+                                Morris, 2014).</li>
+                            <li>Automobiles: Enabling autonomous driving, as demonstrated by Tesla (Tong et al., 2019).
+                            </li>
+                            <li>Surveillance: Enhancing security systems for object detection and anomaly recognition
+                                (Sikora et al., 2020).</li>
+                            <li>Education: Facilitating personalized learning and automating tasks (Chen et al., 2020).
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -277,13 +288,13 @@
                     </div>
                 </div>
             </div>
-            <div class="row p-0 pt-5">
+            <div class="row p-0 pt-3">
                 <div class="col-12 p-0" data-aos="fade-left">
                     <h2 class="text-skyblue d-flex gap-4 align-items-center"><span
-                            class=" fs-53 fw-normal text-center">Machine Learning</span> </h2>
+                            class=" fs-45 fw-normal text-center">Machine Learning</span> </h2>
                 </div>
             </div>
-            <div class="row flex-lg-row flex-column row-gap-5 py-5">
+            <div class="row flex-lg-row flex-column row-gap-5 ">
                 <div class="col-12 col-lg-6" data-aos="fade-up">
                     <div class="d-flex justify-content-center align-items-center image-wrapper">
                         <img src="/assets/images/binarycomp.svg" class="w-80 img-animation" alt="">
@@ -292,15 +303,15 @@
                 <div class="col-12 col-lg-6">
                     <div class="d-flex flex-column gap-lg-0 gap-4 justify-content-between">
                         <div class="" data-aos="zoom-out">
-                            <p class="text-white text-lg-start text-center fs-20 mt-5">
+                            <p class="text-white text-lg-start text-center fs-20 mt-4">
                                 Machine learning (ML) is a core component of artificial intelligence (AI). It enables
                                 computers to learn from data and experiences in a manner similar to how humans learn. ML
                                 systems create models that can be enhanced, identify patterns, and resolve issues. By
                                 utilising historical data, they are able to address new challenges (Celik, 2018).</p>
                         </div>
-                        <div class="mt-lg-5 mt-3 text-lg-start text-center">
+                        <div class="mt-lg-4 mt-3 text-lg-start text-center">
                             <button onclick="navigateToSection('feature-section')"
-                                class="btn btn-primary border-5 fw-semibold rounded-circle p-5 fs-26  lh-0"
+                                class="btn text-white  border-5 fw-semibold circle p-5 fs-26 lh-0"
                                 data-aos="zoom-out">key<br>
                                 Features</button>
                         </div>
@@ -311,7 +322,7 @@
     </section>
     <!-- feature section -->
     <section class="feature-section d-none" id="feature-section">
-        <div class="container py-5">
+        <div class="container py-4">
             <div class="d-flex justify-content-end align-items-end">
                 <div class="box p-2">
                     <div class="image-wrapper">
@@ -319,23 +330,22 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-lg-0 mt-5 ">
+            <div class="row mt-lg-0 mt-2 ">
                 <div class="col-12" data-aos="fade-up">
-                    <h2 class="text-center text-white fs-40">Key Features of Machine Learning</h2>
+                    <h2 class="text-center text-white fs-26">Key Features of Machine Learning</h2>
                 </div>
             </div>
-            <div class="row align-items-center row-gap-5 mt-5">
+            <div class="row align-items-center row-gap-4 mt-3 ">
                 <div class="col-12 col-lg-6" data-aos="fade-right">
                     <div
-                        class="d-flex flex-nonwrap flex-row column-gap-lg-2 column-gap-1 align-items-center card bg-transparent">
-                        <div class="text-start me-3">
-                            <h4 class="fs-20 text-start text-skyblue">Learning from Data</h4>
-                            <p class="mt-lg-3 mt-2 text-white text-wrap  me-0">Data
+                        class="d-flex flex-nonwrap flex-row column-gap-lg-5 column-gap-3 align-items-center card bg-transparent">
+                        <div class="text-start ">
+                            <h4 class="fs-18 text-start text-skyblue">Learning from Data</h4>
+                            <p class="mt-lg-3 mt-2 text-white text-wrap ">Data
                                 ML systems analyse historical data in order to identify patterns and make decisions.</p>
                         </div>
-                        <div class="text-end  ">
-                            <button onclick="navigateToSection('inteligence-section')"
-                                class="btn btn-primary rounded-circle p-4 fs-40  lh-none">01</button>
+                        <div class="text-end ">
+                            <p class="btn border-2 circle text-white  p-4 fs-20 lh-0">01</p>
                         </div>
                     </div>
                 </div>
@@ -343,11 +353,11 @@
                     <div
                         class="d-flex flex-nonwrap flex-row column-gap-lg-5 column-gap-3 align-items-center card bg-transparent">
                         <div class="text-start">
-                            <a href="#inteligence-section" class="btn btn-primary rounded-circle p-4 fs-40  lh-0">02</a>
+                            <p href="" class="btn border-2 text-white circle p-4 fs-20 lh-0">02</p>
 
                         </div>
                         <div class="text-end ">
-                            <h4 class="fs-20 text-start text-skyblue">Self-Improvement</h4>
+                            <h4 class="fs-18 text-start text-skyblue">Self-Improvement</h4>
                             <p class="mt-lg-3 mt-2 text-white text-start text-wrap ">These systems are designed to
                                 continuously
                                 improve their performance as they process more data.</p>
@@ -356,20 +366,19 @@
                     </div>
                 </div>
             </div>
-            <div class="row align-items-center row-gap-5 mt-5">
+            <div class="row align-items-center row-gap-4 mt-3">
                 <div class="col-12 col-lg-6" data-aos="fade-down">
                     <div
                         class="d-flex flex-nonwrap flex-row column-gap-lg-2 column-gap-1 align-items-center card bg-transparent">
-                        <div class="text-start me-3">
-                            <h4 class="fs-20 text-start text-skyblue">Problem-Solving</h4>
-                            <p class="mt-lg-3 mt-2 text-white text-wrap me-0 ">ML is capable of solving complex problems
+                        <div class="text-start me-2 ">
+                            <h4 class="fs-18 text-start text-skyblue">Problem-Solving</h4>
+                            <p class=" mt-2 text-white text-wrap me-0 ">ML is capable of solving complex problems
                                 that are
                                 difficult to address with traditional programming, such as recognising speech or images
                             </p>
                         </div>
                         <div class="text-end  ">
-                            <a href=""
-                                class="btn btn-primary rounded-circle p-4 fs-40  lh-none">03</a>
+                            <p class="btn border-2 text-white circle p-4 fs-20  lh-none">03</p>
                         </div>
                     </div>
                 </div>
@@ -377,11 +386,11 @@
                     <div
                         class="d-flex flex-nonwrap flex-row column-gap-lg-5 column-gap-3 align-items-center card bg-transparent">
                         <div class="text-start">
-                            <a href="" class="btn btn-primary rounded-circle p-4 fs-40  lh-0">04</a>
+                            <p class="btn border-2 circle text-white p-4 fs-20  lh-0">04</p>
 
                         </div>
                         <div class="text-end ">
-                            <h4 class="fs-20 text-start text-skyblue">Adaptability</h4>
+                            <h4 class="fs-18 text-start text-skyblue">Adaptability</h4>
                             <p class="mt-lg-3 mt-2 text-white text-start text-wrap ">
                                 ML systems can adapt to new information and changing environments.</p>
 
@@ -389,30 +398,30 @@
                     </div>
                 </div>
             </div>
-            <div class="row align-items-center row-gap-5 mt-5">
+            <div class="row align-items-center row-gap-4 mt-3">
                 <div class="col-12 col-lg-6" data-aos="fade-left">
                     <div
                         class="d-flex flex-nonwrap flex-row column-gap-lg-2 column-gap-1 align-items-center card bg-transparent">
-                        <div class="text-start me-3">
-                            <h4 class="fs-20 text-start text-skyblue">Predictive Analysis</h4>
-                            <p class="mt-lg-3  mt-2 text-white text-wrap me-0 ">
+                        <div class="text-start ">
+                            <h4 class="fs-18 text-start text-skyblue">Predictive Analysis</h4>
+                            <p class="mt-lg-3 mt-2 text-white text-wrap ">
                                 ML is used by businesses to forecast trends, manage risks, and improve efficiency.</p>
                         </div>
-                        <div class="text-end  ">
-                            <a href=""
-                                class="btn btn-primary rounded-circle p-4 fs-40  lh-none">05</a>
+                        <div class="text-end ">
+                            <p
+                                class="btn border-2 circle text-white p-4 fs-20  lh-none">05</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6" data-aos="fade-right">
                     <div
-                        class="d-flex flex-nonwrap flex-row column-gap-lg-5 column-gap-3 align-items-center card bg-transparent">
+                        class="d-flex flex-nonwrap flex-row column-gap-5 align-items-center card bg-transparent">
                         <div class="text-start">
-                            <a href="#inteligence-section" class="btn btn-primary rounded-circle p-4 fs-40 lh-0">06</a>
+                            <p class="btn border-2 circle text-white p-4 fs-20 lh-0">06</p>
 
                         </div>
                         <div class="text-end ">
-                            <h4 class="fs-20 text-start text-skyblue">Real World Applications</h4>
+                            <h4 class="fs-18 text-start text-skyblue">Real World Applications</h4>
                             <p class="mt-lg-3 mt-2 text-white text-start text-wrap ">
                                 Examples include virtual assistants, recommendation systems, and fraud detection.</p>
 
@@ -420,22 +429,22 @@
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-between align-items-center mt-4">
+            <div class="row justify-content-between align-items-center mt-3">
                 <div class=" col-12 col-lg-4 mt-5">
-                    <h4 class="text-white fs-18" data-aos="fade-right">
+                    <h4 class="text-white fs-18" >
                         Machine learning encompasses three distinct learning approaches:
                     </h4>
                 </div>
                 <div class="col-12 col-lg-7 mt-5">
-                    <div class="d-flex align-items-center gap-5 flex-lg-row flex-column">
-                        <a href="#supervised-section" class="btn btn-primary rounded-5 fs-16"
-                            data-aos="zoom-out">Supervised Learning</a>
-                        <a href="#Unsupervised-section" class="btn btn-primary rounded-5 fs-16"
-                            data-aos="zoom-out">Unsupervised
-                            Learning</a>
-                        <a href="#reinforcementlearn-section" class="btn btn-primary rounded-5 fs-16"
-                            data-aos="zoom-out">Reinforcement
-                            Learning</a>
+                    <div class="d-flex align-items-center gap-4 flex-lg-row flex-column">
+                        <button onclick="navigateToSection('supervised-section')" class="btn btn-primary rounded-5 fs-16"
+                        >Supervised Learning</button>
+                        <button onclick="navigateToSection('Unsupervised-section')" class="btn btn-primary rounded-5 fs-16"
+                        >Unsupervised
+                            Learning</button>
+                        <button onclick="navigateToSection('reinforcementlearn-section')" class="btn btn-primary rounded-5 fs-16"
+                        >Reinforcement
+                            Learning</button>
                     </div>
                 </div>
             </div>
@@ -453,11 +462,11 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-10">
+            <div class="row mt-5">
                 <div class="col-12 col-lg-8">
-                    <h2 class="fs-53 text-skyblue fw-semibold pe-lg-5 pe-0 me-4" data-aos="fade-up">Supervised Learning
+                    <h2 class="fs-45 text-skyblue fw-semibold pe-lg-5 pe-0 me-4" data-aos="fade-up">Supervised Learning
                     </h2>
-                    <p class="pt-4 fs-20 text-white" data-aos="zoom-out">
+                    <p class="pt-4 fs-18 text-white" data-aos="zoom-out">
                         Supervised learning is the foundational approach in machine learning, where a machine learns to
                         map an input variable to an output variable based on labelled data pairs. This method is divided
                         into two main categories: classification and regression.
@@ -490,7 +499,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-10">
+            <div class="row mt-5">
                 <div class="col-12">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <h2 class="text-white fs-40 fw-semibold text-center" data-aos="fade-up">Structured vs.
@@ -518,11 +527,11 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-10">
+            <div class="row mt-5">
                 <div class="col-12 col-lg-8">
-                    <h2 class="fs-53 text-skyblue fw-semibold pe-lg-5 pe-0 me-4 " data-aos="fade-up">Unsupervised
+                    <h2 class="fs-45 text-skyblue fw-semibold pe-lg-5 pe-0 me-4 " data-aos="fade-up">Unsupervised
                         Learning</h2>
-                    <p class="pt-4 fs-20 text-white " data-aos="zoom-out">
+                    <p class="pt-4 fs-18 text-white " data-aos="zoom-out">
                         Unsupervised Learning (UL) is dedicated to identifying patterns within datasets which has
                         unstructured data points. Unlike supervised learning, UL operates independently, it does not
                         require any external supervision and enables artificial intelligence systems to autonomously
@@ -554,11 +563,11 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-10">
+            <div class="row mt-4">
                 <div class="col-12 col-lg-8">
-                    <h2 class="fs-53 text-skyblue fw-semibold pe-lg-5 pe-0 me-4" data-aos="fade-up">Reinforcement
+                    <h2 class="fs-45 text-skyblue fw-semibold pe-lg-5 pe-0 me-4" data-aos="fade-up">Reinforcement
                         Learning</h2>
-                    <p class="pt-4 fs-20 text-white pe-lg-4" data-aos="zoom-out">Reinforcement learning (RL) empowers
+                    <p class="pt-4 fs-18 text-white pe-lg-4" data-aos="zoom-out">Reinforcement learning (RL) empowers
                         systems to
                         autonomously make decisions in a dynamic environment using the principle of trial and error
                         (Francois-Lavet, Henderson, Islam, Bellemare &amp; Pineau, 2018). The decision which maximizes
@@ -571,7 +580,7 @@
                         have algorithms which work on trial-and-error strategies to accomplish desired outcomes
                         (Francois-Lavet et al., 2018).
                     </p>
-                    <div class="mt-5" data-aos="zoom-out">
+                    <div class="mt-4" data-aos="zoom-out">
                         <button onclick="navigateToSection('reinforcement-section')" class="btn btn-primary rounded-5">Read More!</button>
                     </div>
                 </div>
@@ -593,7 +602,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-10">
+            <div class="row mt-5">
                 <div class="col-12">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <h2 class="text-white fs-40 fw-semibold text-center" data-aos="fade-up">Trial and Error</h2>
@@ -621,9 +630,9 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-10">
+            <div class="row mt-5">
                 <div class="col-12 col-lg-8">
-                    <h2 class="fs-53 text-skyblue fw-semibold pe-lg-5 pe-0 me-4 " data-aos="fade-left">Deep Learning
+                    <h2 class="fs-45 text-skyblue fw-semibold pe-lg-5 pe-0 me-4 " data-aos="fade-left">Deep Learning
                     </h2>
                     <p class="pt-4 fs-20 text-white pe-lg-4" data-aos="zoom-out">Deep learning is a powerful type of
                         machine learning that
@@ -638,7 +647,7 @@
                         learning, which extracts abstract features and representations from the input data through
                         iterative training processes (Ghiassi &amp; Saidane, 2005).
                     </p>
-                    <div class="mt-5">
+                    <div class="mt-4">
                         <button onclick="navigateToSection('moredeep-section')" class="btn btn-primary rounded-5" data-aos="zoom-out">Read More!</button>
                     </div>
                 </div>
@@ -660,7 +669,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-10">
+            <div class="row mt-5">
                 <div class="col-12">
                     <h2 class="fs-40 text-white fw-semibold text-center" data-aos="zoom-in">
                         Training of ANN:<br>
@@ -670,7 +679,7 @@
             </div>
             <div class="row justify-content-center align-items-baseline">
                 <div class="col-12 col-lg-6">
-                    <div class="d-flex align-items-center card bg-transparent mt-10" data-aos="fade-left">
+                    <div class="d-flex align-items-center card  border-0 bg-transparent mt-10" data-aos="fade-left">
                         <h4 class="fs-20 text-skyblue">Forward Propagation</h4>
                         <p class="text-white text-center mt-2 fs-18">
                             Data moves through the network to produce a prediction (Kag &amp; Saligrama, 2021).
@@ -678,7 +687,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <div class="d-flex align-items-center card bg-transparent mt-10" data-aos="fade-right">
+                    <div class="d-flex align-items-center card border-0 bg-transparent mt-10" data-aos="fade-right">
                         <h4 class="fs-20 text-skyblue">Backward Propagation
                         </h4>
                         <p class="text-white text-center mt-2 fs-18">
@@ -715,13 +724,13 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-10">
+            <div class="row mt-8">
                 <div class="col-12 p-0" data-aos="fade-left">
                     <h2 class="text-white d-flex gap-5 align-items-baseline"><span
                             class=" fs-40 fw-normal text-center">References</span> </h2>
                 </div>
             </div>
-            <div class="row mt-5">
+            <div class="row mt-4">
                 <div class="col-12" data-aos="zoom-out">
                     <ol class="d-flex flex-column row-gap-2">
                         <li class="text-white fs-18">AI, H. (2019). High-level expert group on artificial intelligence.
@@ -763,13 +772,13 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-10">
+            <div class="row mt-8">
                 <div class="col-12 p-0" data-aos="fade-left">
                     <h2 class="text-white d-flex gap-5 align-items-baseline"><span
                             class=" fs-40 fw-normal text-center">References</span> </h2>
                 </div>
             </div>
-            <div class="row mt-5">
+            <div class="row mt-4">
                 <div class="col-12" data-aos="zoom-out">
                     <ol class="d-flex flex-column row-gap-2">
                         <li class="text-white fs-18">Han, J., Pei, J., &amp; Tong, H. (2022). Data mining: concepts and
@@ -810,13 +819,13 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-10">
+            <div class="row mt-8">
                 <div class="col-12 p-0" data-aos="fade-left">
                     <h2 class="text-white d-flex gap-5 align-items-baseline"><span
                             class=" fs-40 fw-normal text-center">References</span> </h2>
                 </div>
             </div>
-            <div class="row mt-5">
+            <div class="row mt-4">
                 <div class="col-12" data-aos="zoom-out">
                     <ol class="d-flex flex-column row-gap-2">
                         <li class="text-white fs-18">Naeem, S., Ali, A., Anam, S., &amp; Ahmed, M. M. (2023). An
@@ -881,21 +890,26 @@
         });
     </script>
     <script>
-        function navigateToSection(sectionId) {
-            // Get all sections
-            const sections = document.querySelectorAll('section');
+       function navigateToSection(sectionId) {
+  // Get all sections
+  const sections = document.querySelectorAll('section');
 
-            // Iterate over sections to toggle classes
-            sections.forEach(section => {
-                if (section.id === sectionId) {
-                    section.classList.remove('d-none');
-                    section.classList.add('d-block');
-                } else {
-                    section.classList.remove('d-block');
-                    section.classList.add('d-none');
-                }
-            });
-        }
+  // Iterate over sections to toggle classes
+  sections.forEach(section => {
+    if (section.id === sectionId) {
+      section.classList.add('section-visible');
+      section.classList.remove('d-none');
+      section.classList.add('d-block');
+    } else {
+      section.classList.remove('section-visible');
+      section.classList.remove('d-block');
+      setTimeout(() => {
+        section.classList.add('d-none');
+      }, 500); // Match this duration with the transition duration
+    }
+  });
+}
+
 
     </script>
 </body>

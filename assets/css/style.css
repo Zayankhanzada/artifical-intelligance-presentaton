@@ -1,11 +1,24 @@
 body {
-    font-family: "Inter", sans-serif;
+    font-family: "Poppins", sans-serif;
     background: rgb(11, 27, 54);
     overflow: hidden;
-    font-weight: normal;
 
 }
+/* section transition */
+/* Initial styles for sections */
+section {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease-in-out, visibility 0.25s ease-in-out, height 0.35s ease-in-out;
 
+  }
+  
+  /* Class to show sections with smooth transition */
+  .section-visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  
 .image-wrapper {
     width: auto;
     height: auto;
@@ -53,8 +66,8 @@ button {
     font-size: 40px;
 }
 
-.fs-53 {
-    font-size: 53px;
+.fs-45 {
+    font-size: 45px;
 }
 
 .fs-96 {
@@ -110,7 +123,9 @@ p {
     background-color: rgb(11, 27, 54) !important;
     border-color: #25CBD2;
 }
-
+.btn-primary:hover{
+    border-color: #25CBD2;
+}
 .right-circle::before {
     content: "";
     position: absolute;
@@ -293,6 +308,13 @@ img [src*="light-blue.png"] {
     width: 80%;
 }
 
+.circle{
+    border-radius: 100%;
+    border-color: #25CBD2;
+}
+.circle:hover{
+    border-color: #25CBD2;
+}
 /* inteligence section */
 .inteligence-section ul::before {
     content: "";
@@ -392,6 +414,9 @@ img [src*="light-blue.png"] {
         margin-top: 70px;
     }
 
+    .fs-26{
+        font-size: 24px;
+    }
     .fs-53 {
         font-size: 50px;
     }
