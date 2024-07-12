@@ -2,23 +2,23 @@ body {
     font-family: "Poppins", sans-serif;
     background: rgb(11, 27, 54);
     overflow: hidden;
-
 }
+
+
 /* section transition */
-/* Initial styles for sections */
 section {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.25s ease-in-out, visibility 0.25s ease-in-out, height 0.35s ease-in-out;
 
-  }
-  
-  /* Class to show sections with smooth transition */
-  .section-visible {
+}
+
+/* Class to show sections with smooth transition */
+.section-visible {
     opacity: 1;
     visibility: visible;
-  }
-  
+}
+
 .image-wrapper {
     width: auto;
     height: auto;
@@ -109,9 +109,18 @@ h1 {
     margin: 0;
 }
 
+h4 {
+    margin: 0;
+}
+
 p {
     font-size: 16px;
     margin: 0;
+    font-weight: 300;
+}
+
+li {
+    font-weight: 300;
 }
 
 /* buttons */
@@ -122,10 +131,13 @@ p {
 .btn-primary {
     background-color: rgb(11, 27, 54) !important;
     border-color: #25CBD2;
+    box-shadow:0 1px 4px rgba(37, 203, 210, 0.8), 0 0 40px rgba(37, 203, 210, 0.1) inset;
 }
-.btn-primary:hover{
+
+.btn-primary:hover {
     border-color: #25CBD2;
 }
+
 .right-circle::before {
     content: "";
     position: absolute;
@@ -201,6 +213,8 @@ img [src*="light-blue.png"] {
 .box {
     border: 2px solid #25CBD2;
     cursor: pointer;
+    box-shadow:0 1px 4px rgba(37, 203, 210, 0.8), 0 0 40px rgba(37, 203, 210, 0.1) inset;
+
 }
 
 /* position absolute values */
@@ -308,19 +322,24 @@ img [src*="light-blue.png"] {
     width: 80%;
 }
 
-.circle{
+.circle {
     border-radius: 100%;
     border-color: #25CBD2;
+    box-shadow:0 1px 4px rgba(37, 203, 210, 0.3), 0 0 40px rgba(37, 203, 210, 0.1) inset;
+
 }
-.circle:hover{
+
+.circle:hover {
     border-color: #25CBD2;
 }
+
 /* inteligence section */
-.inteligence-section ul::before {
+.inteligence-section .line {
     content: "";
+    display: block;
     height: 2px;
     flex: 1;
-    max-width: 50%;
+    max-width: 100%;
     background-color: #25CBD2;
 
 }
@@ -336,6 +355,12 @@ img [src*="light-blue.png"] {
     z-index: 1;
 }
 
+.feature-box {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #25CBD2;
+}
 
 .machine-section h2::before {
     content: "";
@@ -349,6 +374,14 @@ img [src*="light-blue.png"] {
 
 .feature-section .btn {
     padding: 8px 17px;
+}
+
+.num-box {
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    box-shadow: inset 0px 1px 3px white;
 }
 
 /* supervised section */
@@ -400,23 +433,31 @@ img [src*="light-blue.png"] {
 }
 
 
+ 
+
+ 
+
 @media screen and (max-width:575.98px) {
-  body{
-    overflow-y: scroll;
-  }
-    h1{
-    font-size: 50px;
-  }
-  .fs-37{
-    font-size: 30px;
-  }
+    body {
+        overflow-y: scroll;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .fs-37 {
+        font-size: 30px;
+    }
+
     .mt-10 {
         margin-top: 70px;
     }
 
-    .fs-26{
+    .fs-26 {
         font-size: 24px;
     }
+
     .fs-53 {
         font-size: 50px;
     }
